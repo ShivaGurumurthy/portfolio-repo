@@ -240,8 +240,9 @@
             <input type="text" name="name" id="name" class="border-2 border-white rounded-lg p-3">
             <label for="suggestions">Your suggestions: </label>
             <textarea name="suggestions" id="suggestions" class="border-2 border-white rounded-lg p-3"></textarea><br>
-            <button type="submit"
-  class="bg-[#ff6b6b] text-[#fefefe] text-center p-3 rounded-lg cursor-pointer transform hover:text-gray-400 hover:scale-125 transition-transform duration-300">
+            <button 
+  type="submit"
+  class="bg-[#ff6b6b] text-[#fefefe] text-center p-3 rounded-lg cursor-pointer transform hover:text-gray-400 hover:scale-125 focus:scale-125 focus:outline-none transition-transform duration-300">
   <i class="fa-solid fa-bolt"></i> Submit
 </button>
           </form>
@@ -333,7 +334,7 @@
   });
   const handleSubmit = (e)=>{
     e.preventDefault()
-    window.location.reload()
+    // window.location.reload()
   }
 }
 renderProject(projects);
